@@ -69,13 +69,17 @@
 #     print(i)
 #
 #
-# def mg(l, step=1):
-#     m = []
-#     i = 0
-#     while len(m) != l:
-#         m.append(i)
-#         yield m
-#         i += step
+def mg(l, step=1):
+    m = []
+    i = 0
+    while len(m) != l:
+        m.append(i)
+        yield m
+        i += step
+
+
+for a in mg(5):
+    print(a)
 #
 #
 # def fg(l):

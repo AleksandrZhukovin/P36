@@ -24,31 +24,40 @@ import time
 #     p1.start()
 #     p2.start()
 
-import asyncio
+# import asyncio
+#
+#
+# async def f():
+#     print(1)
+#
+#     await asyncio.sleep(1)
+#     print(2)
+#
+# import requests
+# from bs4 import BeautifulSoup as bs
+#
+#
+# async def f1():
+#     r = requests.get('https://youtube.com')
+#     html = bs(r.text, 'html.parser')
+#
+#     data = html.find_all('div')
+#     print(data)
+#
+#
+# async def g():
+#     r = requests.get('https://wikipedia.com')
+#     html = bs(r.text, 'html.parser')
+#
+#     data = html.find_all('div')
+#     print(data)
+#
+#
+# async def f4():
+#     await asyncio.gather(f1(), g())
+#
+# asyncio.run(f4())
 
-
-async def f():
-    print(1)
-
-    await asyncio.sleep(1)
-    print(2)
-
-import requests
-from bs4 import BeautifulSoup as bs
-
-r = requests.get('URL')
-html = bs(r.text, 'html.parser')
-
-async def f1():
-    print(3)
-    await asyncio.sleep(1)
-    print(4)
-
-
-async def g():
-    await asyncio.gather(f(), f1())
-
-asyncio.run(g())
 
 # створити дві функції-корутини роботи з файлами. Перша має створювати файл і записувати 100 строк. Друга читати довільний файл і виводити його строки
 # в асинхроному режимі викликати ці дві функції
